@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 23</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El jardín de las estatuas
+                <br><br>
+                Hace mucho tiempo, existía un lugar mágico que guardaba grandes maravillas y tesoros del mundo. No era un lugar oculto, ni escondido, y cualquiera podía tratar de acceder y disfrutar sus delicias. Bastaba cumplir un requisito: ser una buena persona. Ni siquiera heroica o extraordinaria: sólo buena persona.
+                <br><br>
+                Allá fueron a buscar fortuna Alí y Benaisa, dos jóvenes amigos. Alí fue el primero en probar suerte, pues cada persona debía afrontar sus pruebas en solitario. Pronto se encontró en medio de un bello jardín, adornado por cientos de estatuas tan reales, que daba la sensación de que en cualquier momento podrían echar a andar, o a llorar, pues su gesto era más bien triste y melancólico. Pero Alí no quiso distraerse de su objetivo, y conteniendo sus ganas de seguir junto a las estatuas, siguió caminando hasta llegar a la entrada de un gran bosque, custodiada por dos estatuas de piedra gris muy distintas de las demás: una tenía el gesto enfadado, y la otra claramente alegre. Junto a la entrada se podía leer una inscripción: "La bondad de tu carácter deberás a las piedras contar".
+                <br><br>
+                Así que Alí se estiró, aclaró la garganta y dijo en alta voz: - Soy Alí. Una buena persona. A nadie he hecho ningún mal y nadie tiene queja de mí.
+                <br><br>
+                Tras un silencio eterno, la estatua de gesto alegre comenzó a cobrar vida, y bajándose de su pedestal, dijo amablemente: - Excelente, tu bondad es perfecta para este sitio, está lleno de estatuas como tú: ¡a nadie hacen mal, y nadie tiene queja de ellas!
+                <br><br>
+                Y en el mismo instante, Alí sintió cómo todo su cuerpo se paralizaba completamente. Ni siquiera los ojos podían mover. Pero seguía viendo, oyendo y sintiendo. Lo justo para comprender que se había convertido en una más de las estatuas que adornaban el jardín.
+                <br><br>
+                Poco después era Benaisa quien disfrutaba de las maravillas del jardín. Pero al contrario que a su amigo, la visión de aquellas estatuas, y sus ojos tristes e inmóviles, le conmovieron hasta el punto de acercarse a tocarlas una por una, acariciándolas, con la secreta esperanza de que estuvieran vivas. Al tocarlas, sintió el calor de la vida, y ya no pudo apartar de su cabeza la idea de que todas seguían vivas, presas de alguna horrible maldición. Se preguntaba por sus vidas, y por cómo habrían acabado allí, y corrió varias veces a la fuente para llevar un poco de agua con la que mojar sus labios. Y entonces vio a Alí, tan inmóvil y triste como los demás. Benaisa, olvidando para qué había ido allí, hizo cuanto pudo por liberar a su amigo, y a muchos otros, sin ningún éxito.
+                <br><br>
+                Finalmente, vencido por el desánimo, se acercó a las estatuas que custodiaban la entrada al gran bosque. Leyó la inscripción, pero sin hacer caso de la misma, habló en voz alta: - Otro día defenderé mis buenas obras. Pero hoy tengo un amigo atrapado por una maldición, y muchas otras personas junto a él, y quisiera pedir su ayuda para salvarlos.
+                <br><br>
+                Cuando terminó, la estatua de gesto enfadado cobró vida entre gruñidos y quejas. Y sin perder su aire enojado, dijo: -¡Qué mala suerte! Aquí tenemos alguien que no es una estatua. Habrá que dejarle pasar... ¡y encima se llevará una de nuestras estatuas! ¿Cuál eliges?
+                <br><br>
+                Benaisa dirigió entonces la vista hacia su amigo, que al momento recuperó el movimiento y corrió a abrazarse con él. Mientras, los árboles del bosque se abrían para dejar ver un mundo de maravillas y felicidad.
+                <br><br>
+                Cuando un feliz Benaisa se disponía a cruzar la puerta, el propio Alí lo detuvo. Y echando la vista atrás, hacia todas las demás estatuas, Alí dijo decidido: -Espera, Benaisa. No volveré a comportarme como una estatua nunca más. Hagamos algo por estas personas.
+                <br><br>
+                Y así, los dos amigos terminaron encontrando la forma de liberar de su encierro en vida, a todas las estatuas del jardín, de las que surgieron cientos de personas ilusionadas por tener una segunda oportunidad para demostrar que nunca más serían como estatuas, y que en adelante dejarían de no hacer mal ni tener enemigos, para hacer mucho bien y saber rodearse de amigos.
+                <br><br>
+                https://cuentosparadormir.com/infantiles/cuento/el-jardin-de-las-estatuas - Escritor Pedro Pablo Sacristán – 698 palabras
+            </p>
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
